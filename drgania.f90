@@ -65,7 +65,6 @@ read (*,*) b
 		write (*,*) 'Podaj tytul wykresu: '
 		read (*,*) tytul
 		sys='gnuplot -p -e "set title '//''''//trim(tytul)//''''//'; plot '//''''//trim(name)//''''//'"'
-		!write (*,*) sys
 		call system(sys)
 	end if
 
